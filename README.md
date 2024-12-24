@@ -2,6 +2,11 @@
 
 ## Installation
 
+### Default User
+
+radxa
+radxa
+
 ### Connect to wifi
 
 ```bash
