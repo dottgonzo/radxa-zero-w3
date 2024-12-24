@@ -23,4 +23,14 @@ sudo apt update && sudo apt install -y git
 
 git clone https://github.com/dottgonzo/raxda-zero-w3.git /tmp/raxda-zero-w3
 
+cd /tmp/raxda-zero-w3
+
+```
+
+### Run the installer
+
+```bash
+
+task install
+
 ```
