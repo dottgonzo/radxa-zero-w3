@@ -21,7 +21,7 @@ tasks:
   cli-dependencies:
     cmds:
       - apt update
-      - apt install -y --allow-downgrades rsync ffmpeg lm-sensors
+      - apt install -y --allow-downgrades rsync ffmpeg lm-sensors net-tools nano nmap lsof htop telnet iputils-ping
   desktop-dependencies:
     cmds:
       - apt update
