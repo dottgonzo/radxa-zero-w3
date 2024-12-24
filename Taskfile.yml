@@ -21,7 +21,7 @@ tasks:
   cli-dependencies:
     cmds:
       - apt update
-      - apt install -y --allow-downgrades rsync ffmpeg
+      - apt install -y --allow-downgrades rsync ffmpeg lm-sensors
   desktop-dependencies:
     cmds:
       - apt update
