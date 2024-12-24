@@ -7,11 +7,13 @@ tasks:
     - task: cli-dependencies
     - task: desktop-dependencies
     - task: clean
+    - task: reboot
   install-cli:
     cmds:
     - task: update
     - task: cli-dependencies
     - task: clean
+    - task: reboot
   update:
     cmds:
       - apt update
@@ -28,3 +30,6 @@ tasks:
     cmds:
       - apt autoremove -y
       - apt autoclean
+  reboot:
+    cmds:
+      - reboot
