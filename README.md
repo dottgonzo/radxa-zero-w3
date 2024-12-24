@@ -1,4 +1,4 @@
-# Raxda Zero 3W
+# Radxa Zero 3W
 
 ## Installation
 
