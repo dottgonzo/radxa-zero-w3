@@ -1,15 +1,15 @@
 version: '3'
 
 tasks:
-  update:
-    cmds:
-      - apt update
-      - apt dist-upgrade -y
-  dependencies:
-    cmds:
-      - apt update
-      - apt install -y rsync vlc mpv
   install:
     cmds:
     - task: update
     - task: dependencies
+  update:
+    cmds:
+      - apt update
+      - apt dist-upgrade -y --allow-downgrades
+  dependencies:
+    cmds:
+      - apt update
+      - apt install -y --allow-downgrades rsync vlc mpv
