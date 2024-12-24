@@ -5,6 +5,7 @@ tasks:
     cmds:
     - task: update
     - task: dependencies
+    - task: clean
   update:
     cmds:
       - apt update
@@ -13,3 +14,7 @@ tasks:
     cmds:
       - apt update
       - apt install -y --allow-downgrades rsync vlc mpv
+  clean:
+    cmds:
+      - apt autoremove -y
+      - apt autoclean
