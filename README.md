@@ -2,6 +2,14 @@
 
 ## Installation
 
+### Connect to wifi
+
+```bash
+
+nmcli device wifi connect <SSID> password <password>
+
+```
+
 ### Install taskfile
 
 ```bash
@@ -9,6 +17,7 @@
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /bin
 
 ```
+
 ### Optionally install git
 
 ```bash
