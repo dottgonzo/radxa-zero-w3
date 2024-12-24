@@ -1,19 +1,29 @@
 version: '3'
 
 tasks:
-  install:
+  install-desktop:
     cmds:
     - task: update
-    - task: dependencies
+    - task: cli-dependencies
+    - task: desktop-dependencies
+    - task: clean
+  install-cli:
+    cmds:
+    - task: update
+    - task: cli-dependencies
     - task: clean
   update:
     cmds:
       - apt update
       - apt dist-upgrade -y --allow-downgrades
-  dependencies:
+  cli-dependencies:
     cmds:
       - apt update
-      - apt install -y --allow-downgrades rsync vlc mpv
+      - apt install -y --allow-downgrades rsync
+  desktop-dependencies:
+    cmds:
+      - apt update
+      - apt install -y --allow-downgrades vlc mpv
   clean:
     cmds:
       - apt autoremove -y
