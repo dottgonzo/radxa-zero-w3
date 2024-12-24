@@ -13,7 +13,7 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /bin
 
 ```bash
 
-sudo apt install -y git
+sudo apt update && sudo apt install -y git
 
 ```
 
@@ -21,6 +21,6 @@ sudo apt install -y git
 
 ```bash
 
-git clone https://github.com/dottgonzo/raxda-zero-w3.git /tmp
+git clone https://github.com/dottgonzo/raxda-zero-w3.git /tmp/raxda-zero-w3
 
 ```
