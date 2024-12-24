@@ -19,7 +19,7 @@ tasks:
   cli-dependencies:
     cmds:
       - apt update
-      - apt install -y --allow-downgrades rsync
+      - apt install -y --allow-downgrades rsync ffmpeg
   desktop-dependencies:
     cmds:
       - apt update
