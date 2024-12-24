@@ -40,6 +40,6 @@ cd /tmp/raxda-zero-w3
 
 ```bash
 
-task install
+task install-desktop
 
 ```
